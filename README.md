@@ -67,12 +67,14 @@ The simulator requires the `math.h` library for logarithmic calculations.
 gcc -o cachesim main.c cache.c -lm
 ```
 ## Usage Example
-// Configure a 16KB 4-way Set-Associative Cache
+Configure a 16KB 4-way Set-Associative Cache
+```bash
 set_cache_param(CACHE_PARAM_USIZE, 16384);
 set_cache_param(CACHE_PARAM_ASSOC, 4);
 set_cache_param(CACHE_PARAM_WRITEBACK, TRUE);
 
 init_cache();
-// ... run traces through perform_access() ...
+ ... run traces through perform_access() ...
 flush();
 print_stats();
+```
