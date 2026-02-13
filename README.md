@@ -65,7 +65,7 @@ For Write-Back caches, the `flush()` function is called at the end of the simula
 The simulator requires the `math.h` library for logarithmic calculations.
 ```bash
 gcc -o cachesim main.c cache.c -lm
-
+```
 ## Usage Example
 // Configure a 16KB 4-way Set-Associative Cache
 set_cache_param(CACHE_PARAM_USIZE, 16384);
